@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:c="http://www.springframework.org/schema/c"
+    xmlns:p="http://www.springframework.org/schema/p"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    
+    <bean class="com.capg.bean.EmployList" id="list">
+    <property name="empList">
+    <list>
+    <ref bean="cmp"/>
+    </list></property>
+    </bean>
+    <bean class="com.capg.bean.Employ" id="cmp">
+    <property name="empId" value="100"/>
+    <property name="empName" value="Hero"/>
+    <property name="salary" value="100000000"/>
+    <property name="businUnit" value="Manufacturing-Unit"/>
+    <property name="age" value="50"/>
+    </bean>
+</beans>
